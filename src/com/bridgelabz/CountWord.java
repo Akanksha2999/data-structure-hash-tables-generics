@@ -8,10 +8,10 @@ public class CountWord {
     public static void main(String[] args) {
         Hashtable<String, Integer> hashtable = new Hashtable<>();
 
-        //A sentence of type string
-        String str = "To be or not to be";
+        //A paragraph of type string
+        String str = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 
-        //Code to count the frequency of words in sentence
+        //Code to count the frequency of words in paragraph
         String[] splitArray = str.toLowerCase().split(" ");
         for (int i = 0; i < splitArray.length; i++) {
             if (hashtable.containsKey(splitArray[i])) {
@@ -22,7 +22,7 @@ public class CountWord {
             }
         }
 
-        //Printing the number of frequency of words in sentence
-        System.out.println("The count of each word in sentence is: " + hashtable);
+        //Printing the number of frequency of words in paragraph
+        System.out.println("The count of each word in paragraph is: " + hashtable);
     }
 }
